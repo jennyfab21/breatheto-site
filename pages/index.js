@@ -1,21 +1,29 @@
-import Head from 'next/head';
-
-export default function Home() {
+export default function ComingSoon() {
   return (
-    <>
-      <Head>
-        <title>BreatheTo – unlock your excellence</title>
-        <meta name="description" content="Breathwork for focus, calm, and performance." />
-      </Head>
-      <main className="min-h-screen flex flex-col items-center justify-center text-center bg-gray-50">
-        <h1 className="text-4xl font-bold mb-3">BreatheTo</h1>
-        <p className="text-gray-600 mb-6">Practical, science-informed breathwork for focus, calm, and performance.</p>
-        <div className="space-x-4">
-          <a href="https://cal.com/YOUR_HANDLE/intro" className="bg-gray-900 text-white px-4 py-2 rounded-xl">Book a Session</a>
-          <a href="mailto:hello@breatheto.com" className="border border-gray-300 px-4 py-2 rounded-xl">Contact</a>
-        </div>
-        <footer className="mt-10 text-gray-400 text-sm">© {new Date().getFullYear()} BreatheTo</footer>
-      </main>
-    </>
+    <main style={{
+      minHeight: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      background: 'linear-gradient(135deg,#111,#333)',
+      color: 'white',
+      textAlign: 'center',
+      padding: '2rem'
+    }}>
+      <h1 style={{fontSize:'3rem',marginBottom:'1rem'}}>BreatheTo</h1>
+      <p style={{fontSize:'1.25rem',opacity:.9}}>
+        Our new experience is coming soon.<br/>Stay tuned.
+      </p>
+      <div style={{marginTop:'2rem'}}>
+        <a href="mailto:hello@breatheto.com"
+           style={{color:'#0ff',textDecoration:'none',fontWeight:'500'}}>
+           Get notified →
+        </a>
+      </div>
+      <footer style={{marginTop:'3rem',fontSize:'.75rem',opacity:.6}}>
+        © {new Date().getFullYear()} BreatheTo
+      </footer>
+    </main>
   );
 }
