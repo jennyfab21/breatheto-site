@@ -16,7 +16,7 @@ export default function ComingSoon() {
         Our new experience is coming soon.<br/>Stay tuned.
       </p>
       <div style={{marginTop:'2rem'}}>
-        <a href="mailto:hello@breatheto.com"
+        <a href="mailto:fabian.jenny@gmail.com"
            style={{color:'#0ff',textDecoration:'none',fontWeight:'500'}}>
            Get notified →
         </a>
